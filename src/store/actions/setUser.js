@@ -1,10 +1,15 @@
-import { SET_USER } from '../../constants';
+import { SET_USER, SET_LOADING_STATUS } from '../../constants';
 
-function setUser(data) {
+export function setUser(data) {
 	return {
 		type: SET_USER,
 		payload: data,
 	};
 }
 
-export default setUser;
+export function setLoadingStatus(status) {
+	return {
+		type: SET_LOADING_STATUS,
+		payload: status,
+	};
+}

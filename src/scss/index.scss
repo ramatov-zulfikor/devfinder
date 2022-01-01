@@ -277,6 +277,9 @@ body {
 		transition: all 0.2s linear;
 	}
 }
+.placeholder svg {
+	fill: red;
+}
 @media (max-width: 1300px) {
 	.devfinder {
 		max-width: 65vw;
@@ -317,11 +320,26 @@ body {
 		}
 	}
 	.user {
+		&__avatar {
+			margin-bottom: 20px;
+		}
+		&__fullname {
+			font-size: 22px;
+		}
+		&__joined,
+		&__name {
+			font-size: 16px;
+		}
 		&__about {
 			flex-direction: column;
 		}
 		&__info {
 			flex: 0 0 100%;
+		}
+	}
+	.theme-switcher {
+		&__text {
+			font-size: 16px;
 		}
 	}
 	.search-bar {
@@ -361,6 +379,11 @@ body {
 	}
 }
 @media (max-width: 375px) {
+	.devfinder {
+		&__content {
+			padding: 15px;
+		}
+	}
 	.search-bar {
 		&__input {
 			&::placeholder {

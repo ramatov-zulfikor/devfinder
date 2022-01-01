@@ -1,8 +1,9 @@
 import axios from 'axios';
-import setUser from '../store/actions/setUser';
+import { setUser, setLoadingStatus } from '../store/actions/setUser';
 
 export function getUser(url, username) {
 	return (dispatch) => {
+		dispatch(setLoadingStatus(false));
 		axios
 			.get(`${url + username}`)
 			.then((res) => {
@@ -26,6 +27,6 @@ export function getUser(url, username) {
 				resultState.twitter_link = `https://twitter.com/${twitter_username}`;
 				dispatch(setUser(resultState));
 			})
-			.catch((e) => console.log(e));
+			.catch((e) => console.log(e.response));
 	};
 }
