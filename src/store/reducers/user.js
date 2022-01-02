@@ -16,7 +16,7 @@ const initialState = {
 		twitter_link: 'https://twitter.com/johndoe',
 		company: 'alugalugcompany',
 	},
-	isLoaded: false,
+	isLoaded: true,
 };
 
 export function userReducer(state = initialState, action) {
