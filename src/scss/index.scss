@@ -10,8 +10,6 @@ body {
 	min-height: 100vh;
 }
 body {
-	display: flex;
-	align-items: center;
 	background-color: #f5f8ff;
 	transition: all 0.2s linear;
 	&.dark {
@@ -73,7 +71,7 @@ body {
 .devfinder {
 	max-width: 55vw;
 	width: 100%;
-	margin: auto;
+	margin: 30px auto 0px;
 	&__header {
 		display: flex;
 		align-items: center;
