@@ -5,11 +5,9 @@
 	box-sizing: border-box;
 	font-family: 'IBM Plex Mono', monospace;
 }
-html,
 body {
 	min-height: 100vh;
-}
-body {
+	padding-top: 30px;
 	background-color: #f5f8ff;
 	transition: all 0.2s linear;
 	&.dark {
@@ -71,7 +69,7 @@ body {
 .devfinder {
 	max-width: 55vw;
 	width: 100%;
-	margin: 30px auto 0px;
+	margin: 0 auto;
 	&__header {
 		display: flex;
 		align-items: center;
