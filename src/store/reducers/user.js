@@ -6,7 +6,7 @@ const initialState = {
 		joined: 'July 22 2020',
 		name: 'Alugalug cat',
 		bio: 'Experienced musician',
-		avatar_url: 'https://bit.ly/3sOIBPP',
+		avatar_url: 'https://bit.ly/3qpAIyV',
 		public_repos: 1180,
 		followers: 2238119,
 		following: 1210,
